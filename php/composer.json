@@ -1,0 +1,7 @@
+{
+    "minimum-stability": "stable", 
+    "require": {
+        "nmred/kafka-php": "v0.2.0.8",
+        "monolog/monolog": "^1.25"
+    }
+}
