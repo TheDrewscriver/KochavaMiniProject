@@ -22,7 +22,7 @@ class KafkaProducer
     $producer->setLogger($logger);
     $producer->send([
       [
-        'topic' => 'test',
+        'topic' => 'kochavaPostback',
         'value' => $json,
         'key' => '',
       ],
