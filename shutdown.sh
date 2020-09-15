@@ -1,6 +1,5 @@
 #/bin/sh
 
-export HOME_DIR=`pwd`
 
 
 #Kill Producer
@@ -21,9 +20,12 @@ done < go_process.pid
 
 
 #Kill Kafka
-kafka/bin/kafka-server-stop.sh
-
 kafka/bin/zookeeper-server-stop.sh
+sleep 20
+kafka/bin/kafka-server-stop.sh
+sleep 20
+
+
 
 
 #Kill Zookeeper
