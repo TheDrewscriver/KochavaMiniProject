@@ -1,17 +1,7 @@
 #/bin/sh
 
 
-
-#Kill Producer
-while IFS= read -r PID
-do
-   echo "$PID"
-   kill -s 9 $PID
-done < php_process.pid
-
-
 #Kill Consumer
-
 while IFS= read -r PID
 do
    echo "$PID"
